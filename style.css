@@ -1,0 +1,252 @@
+/* ======== RESET DAN FONT ======== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ======== KONTENER UTAMA ======== */
+#container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ======== HEADER ======== */
+header {
+  background: linear-gradient(135deg, #1f3c88, #357ae8);
+  color: #fff;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ======== NAVBAR ======== */
+nav {
+  background: #243b55;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background: #3c5fa6;
+  border-radius: 4px;
+}
+
+/* ======== HERO ======== */
+#hero {
+  background: #eef3fc;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 2rem;
+  color: #1f3c88;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #357ae8;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #265ac1;
+}
+
+/* ======== SIDEBAR ======== */
+#sidebar {
+  float: right;
+  width: 28%;
+  background: #fafafa;
+  padding: 25px;
+  border-left: 1px solid #e0e0e0;
+}
+
+.widget-box {
+  margin-bottom: 25px;
+}
+
+.widget-box h3 {
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.widget-box ul {
+  list-style: none;
+}
+
+.widget-box ul li {
+  margin: 6px 0;
+}
+
+.widget-box ul li a {
+  color: #357ae8;
+  text-decoration: none;
+}
+
+.widget-box ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ======== MAIN CONTENT ======== */
+#main {
+  width: 68%;
+  float: left;
+  padding: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.image-circle {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 30px 0;
+}
+
+/* ======== ARTICLE ======== */
+.entry img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 6px;
+}
+
+.entry .right-img {
+  float: right;
+  margin-left: 20px;
+}
+
+.entry h2 {
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.entry p {
+  text-align: justify;
+}
+
+/* ======== FORM KONTAK ======== */
+form {
+  margin-top: 15px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+form button {
+  margin-top: 15px;
+  background: #357ae8;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #1f3c88;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  clear: both;
+  background: #243b55;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  border-top: 3px solid #357ae8;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  #sidebar, #main {
+    float: none;
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+}

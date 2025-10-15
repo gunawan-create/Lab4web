@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout Sederhana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Layout Sederhana</h1>
+    </header>
+
+    <link rel="stylesheet" href="style.css">
+
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <!-- ================= HOME SECTION ================= -->
+    <section id="home">
+      <section id="hero">
+        <h1>Halo Dunia!</h1>
+        <p>
+          Jurusan Informatika berkomitmen untuk mencetak generasi unggul di bidang teknologi informasi.
+          Melalui kurikulum yang inovatif dan pembelajaran berbasis praktik, kami membekali mahasiswa
+          dengan keterampilan analisis, pemrograman, serta pengembangan sistem yang relevan dengan kebutuhan industri masa kini.
+        </p>
+        <a href="#about" class="btn btn-large">Pelajari Lebih Lanjut &raquo;</a>
+      </section>
+
+      <aside id="sidebar">
+        <div class="widget-box">
+          <h3 class="title">Tautan Cepat</h3>
+          <ul>
+            <li><a href="#">Profil Jurusan</a></li>
+            <li><a href="#">Dosen dan Staf</a></li>
+            <li><a href="#">Kurikulum</a></li>
+            <li><a href="#">Prestasi Mahasiswa</a></li>
+            <li><a href="#">Kontak Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="widget-box">
+          <h3 class="title">Tentang Informatika</h3>
+          <p>
+            Jurusan Informatika Universitas Pelita Bangsa berfokus pada pengembangan kompetensi di bidang teknologi dan pemrograman.
+            Mahasiswa dibekali kemampuan berpikir analitis, inovatif, serta siap menghadapi tantangan dunia digital yang terus berkembang.
+          </p>
+        </div>
+      </aside>
+
+      <section id="main">
+        <div class="row">
+          <div class="box">
+            <img src="https://dummyimage.com/120/db7d25/fff.png" alt="" class="image-circle">
+            <h3>Pengembangan Aplikasi</h3>
+            <p>Mahasiswa dibekali kemampuan dalam merancang dan membangun aplikasi berbasis web maupun mobile menggunakan berbagai teknologi modern.</p>
+            <a href="#" class="btn btn-default">Lihat Detail</a>
+          </div>
+
+          <div class="box">
+            <img src="https://dummyimage.com/120/3e73e6/fff.png" alt="" class="image-circle">
+            <h3>Analisis Data</h3>
+            <p>Melalui pembelajaran analitik dan pemrograman, mahasiswa mampu mengolah serta menganalisis data untuk menghasilkan informasi yang bermanfaat.</p>
+            <a href="#" class="btn btn-default">Lihat Detail</a>
+          </div>
+
+          <div class="box">
+            <img src="https://dummyimage.com/120/71e6d4/fff.png" alt="" class="image-circle">
+            <h3>Kecerdasan Buatan</h3>
+            <p>Program studi juga berfokus pada bidang AI dan machine learning, mendorong mahasiswa untuk berinovasi dalam solusi berbasis kecerdasan buatan.</p>
+            <a href="#" class="btn btn-default">Lihat Detail</a>
+          </div>
+        </div>
+      </section>
+
+<section class="about-section">
+  <div class="featurette">
+    <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="">
+    <div>
+      <h2>Inovasi Teknologi Mahasiswa</h2>
+      <p>Mahasiswa Informatika aktif berinovasi dalam menciptakan berbagai solusi digital, mulai dari aplikasi pendidikan, sistem informasi, hingga proyek berbasis Internet of Things (IoT) yang bermanfaat bagi masyarakat.</p>
+    </div>
+  </div>
+
+  <div class="featurette">
+    <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="">
+    <div>
+      <h2>Kolaborasi Riset dan Industri</h2>
+      <p>Melalui kerja sama dengan industri dan lembaga penelitian, jurusan Informatika terus mengembangkan riset di bidang kecerdasan buatan, analisis data, serta keamanan siber untuk menghadapi tantangan era digital.</p>
+    </div>
+  </div>
+
+  <div class="about-me">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah mahasiswa yang memiliki minat besar dalam bidang teknologi informatika, khususnya di pengembangan web dan kecerdasan buatan.</p>
+
+    <div class="portfolio">
+      <h3>Portfolio</h3>
+      <ul>
+        <li>Website Layout Sederhana</li>
+        <li>Desain UI Mobile App</li>
+        <li>Sistem Peminjaman Buku</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact">
+      <hr class="divider" />
+      <h2>Hubungi Saya</h2>
+      <p>Silakan kirim pesan atau pertanyaan melalui form di bawah ini:</p>
+
+      <form class="contact-form">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email anda" required>
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan anda..." required></textarea>
+
+        <button type="submit" class="btn btn-default">Kirim</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 - Universitas Pelita Bangsa</p>
+    </footer>
+  </div>
+</body>
+</html>
